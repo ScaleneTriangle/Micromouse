@@ -115,7 +115,7 @@ visited less. Led to a lot of back tracking, but was able to solve the maze.
 the goal: Using sensor inputs. Building the internal understanding of the maze
 like the previous robot design, but using a heuristic distance from the center
 of the maze to choose the path more likely to reach the goal.
--A* Search Algorithm: As described in Implementation.
+- A* Search Algorithm: As described in Implementation.
 
 ## Model Evaluation and Validation
 ![Robot Scores](/Maze_Images/Scores.PNG?raw=true "Robot Scores")
