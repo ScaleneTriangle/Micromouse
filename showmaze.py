@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     # Create a maze based on input argument on command line.
     #testmaze = Maze( str(sys.argv[1]) )
-    filename = r"Test_Mazes\test_maze_mine.txt"
+    filename = r"Test_Mazes\Output_Maze.txt"
     rootpath = os.path.dirname(os.path.abspath(__file__))
     filepath = os.path.join(rootpath, filename)
     testmaze = Maze( filepath )

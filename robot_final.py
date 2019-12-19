@@ -65,7 +65,7 @@ class Robot(object):
         self.update_maze(sensors)
         
         ## Find optimal route to goal
-        print(self.location, self.heading, self.goal_bounds[0])
+        print("Current Location and Heading: ", self.location, self.heading)
         rotation, movement = self.AStar_robot()
         ## Update Robot internal state
         self.update_robot_state(sensors, rotation, movement) 
@@ -171,7 +171,7 @@ class Robot(object):
         search.process()
         # Return the list of moves necessary to reach the goal
         self.move_list = search.display_path(show=False)
-        print(self.move_list)
+        print("Move List: ", self.move_list)
         #print(self.move_list)
         # Return the move
         rotation, movement = self.move_direction(self.move_list.pop(0))

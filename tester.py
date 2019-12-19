@@ -4,15 +4,16 @@ Run this script to test the robot controller on the maze located at filename
 
 
 from maze import Maze
+#from robot_final import Robot
 from robot_final import Robot
 import os
 import time
 import numpy as np
 
 # Set slow_down to True if want to see the robot move through the maze
-slow_down = False
+slow_down = True
 # Filename with the location of the textfile that contains the maze walls
-filename = r"Test_Mazes\test_maze_03.txt"
+filename = r"Test_Mazes\test_maze_01.txt"
 rootpath = os.path.dirname(os.path.abspath(__file__))
 filepath = os.path.join(rootpath, filename)
 
@@ -127,7 +128,7 @@ if __name__ == '__main__':
                     run_active = False
                     print("Goal found; run {} completed!".format(run))
 
-    # Save the testrobot maze
+    # Save the testrobot maze35
     np.savetxt(r'Test_Mazes\Output_Maze.txt', testrobot.show_maze(), delimiter=',', header=' ')
     with open(r'Test_Mazes\Output_Maze.txt', "r+") as f:
         f.seek(0)
@@ -138,5 +139,6 @@ if __name__ == '__main__':
     # Report score if robot is successful.
     if len(runtimes) == 2:
         print("Task complete! Score: {:4.3f}".format(runtimes[1] + train_score_mult*runtimes[0]))
+        final_score = runtimes[1] + train_score_mult*runtimes[0]
     
     

@@ -6,15 +6,11 @@ Created on Fri Dec 13 07:14:02 2019
 Source of A* search code
 https://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/
 
-Modifications have been made to make this work with my type of maze
+Modifications have been made to make this work with my type of maze.
 """
 
-from maze import Maze
 import heapq
 
-
-
-testmaze = Maze( r"C:\Users\ajkra\Documents\Courses\DataScientist\Capstone Project\AI_startercode\test_maze_01.txt")
 
 # Need to wrewrite for my maze type
 class Cell(object):
