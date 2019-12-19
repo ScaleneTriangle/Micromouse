@@ -69,11 +69,6 @@ The robot interacts with the maze through obstacle sensors that detect the
 number of open squares in the direction of the sensor. There are left, front,
 and right facing sensors. Moves passed from the robot are used by the simulation
 to update the robot's position and return new sensor values.
-- How does the robot interpret the environment
-
-## Data Visualization
-- Picture of Maze drawn. Picture of maze in text form. Picture of the moves on
-the solved maze. (Do maze 2 to explain the neatness with getting stuck)
 
 ## Data Preprocessing
 No preprocessing needed. The robot is always considered to be in the center of
@@ -81,6 +76,7 @@ the current cell and all sensors and movements are exact.
 
 ## Implementation
 ![Maze1 Being Solved](/Maze_Images/Test_Maze_1_run.gif?raw=true "Maze1 Solve")
+
 The core goal of the robot controller in robot_final.py is to repeatedly use the
 A* search algorithm to find the best route to the goal, and then update that
 route at each time step as more walls are found. One note on the this version of
@@ -122,14 +118,14 @@ of the maze to choose the path more likely to reach the goal.
 -A* Search Algorithm: As described in Implementation.
 
 ## Model Evaluation and Validation
-- Bench Mark would be the amount to visit every single cell (assuming no
-  backtracking) and then performing a optimal route to the goal.
-![Robot Scores](/Maze_Images/Test_Maze_1_run.gif?raw=true "Robot Scores")
+![Robot Scores](/Maze_Images/Scores.PNG?raw=true "Robot Scores")
 The robustness is shown by successful completion of the three test mazes and the
 self generated maze. The one issue I've seen with using the A* search algorithm
 for the exploration run is that it will not explore more if it has a *single*
 move optimal route.
-![Weakness](/Maze_Images/Weakness_of_Astar_Exploration.png?raw=true "A* Search Weakness")
+
+![Weakness](/Maze_Images/Weakness_of_Astar_Exploration.PNG?raw=true "A* Search Weakness")
+
 To clarify, it will not explore beyond the most direct path
 even if moving farther in straight lines would be faster. This is not an issue
 for my robots that only perform a single time step for each, but is a weakness
