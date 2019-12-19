@@ -5,7 +5,7 @@ Embed Images, Code,
   Evaluation Section, make a table of the scores of each robot
 ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
-# Micromouse code.
+# Micromouse Project
 
 ## Contents:
 - tester.py: This is the function that when run will use robot_final.py to
@@ -27,7 +27,7 @@ Change the filename on line 13 to select a different maze to visualize.
 be improved.
 
 ## Project Overview
-    This project is inspired by the Micromouse competitions, wherein  a robot
+This project is inspired by the Micromouse competitions, wherein  a robot
 mouse is tasked with plotting a path from a corner of the maze to its center.
 The Micromouse will make to runs in a given maze. In the first run the robot
 will explore the maze and find the goal at the center. In the second run the
@@ -36,7 +36,7 @@ possible. A simplified simulated maze environment is provided with the goal of
 finding the fastest time possible.
 
 ## Problem Statement
-    As stated in the project overview, the goal is to solve the maze as quickly
+As stated in the project overview, the goal is to solve the maze as quickly
 as possible. The strategy is to initially explore the maze just enough to find
 the fastest possible route from the starting corner to the center of the maze.
 Then identify the fastest route from the start to the center and move the robot
@@ -46,7 +46,7 @@ determination. Full implementation will be discussed in the Implementation
 section.
 
 ## Metrics
-    The metrics to measure the performance are based on the number of time steps
+The metrics to measure the performance are based on the number of time steps
 required to explore the maze in the first round and navigate the maze in the
 second round. The goal is to minimize the sum of time steps in the first and
 second round, but the first round time steps only count 1/30th of a time step
@@ -99,7 +99,7 @@ The robustness is shown by successful completion of the three test mazes and the
 self generated maze.
 
 ## Justification
-    There may be more effective ways to explore the maze, but the A* search
+There may be more effective ways to explore the maze, but the A* search
 algorithm will always perform optimal navigation and I believe it does a very
 good job exploring the maze as well.
 [Embed image of the explore out and explore back to show A* exploration]
@@ -109,7 +109,7 @@ unexplored cells because it will believe there is an open path and will map out
 any alternative route from the initial route.
 
 ## Reflection
-    The A* search algorithm appears to be an optimal solution for navigating the
+The A* search algorithm appears to be an optimal solution for navigating the
 maze during the second round and at least a very effective way to explore the
 maze during the first round. I found one interesting case where the A* algorithm
 got stuck moving back and forth between to identically valued cells, and would
