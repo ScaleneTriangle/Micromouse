@@ -95,7 +95,7 @@ do not update while moving between squares. Reversing is on the TODO list.
     ## Update Robot internal state
     self.update_robot_state(sensors, rotation, movement)
 
-The path finding of the robot is done in astar_final.py. I used ![Laurent Luce's Blog](https://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/ "This Site")
+The path finding of the robot is done in astar_final.py. I used [Laurent Luce's Blog](https://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/)
 for how to perform the A* search. I made modifications to the code to make it
 work with my type of maze, but full credit on the A* search implementation goes
 to Laurent Luce. The A* search works by using a heuristic distance from the goal
@@ -172,7 +172,7 @@ but it would be very interesting.
 
 ## Acknowledgements
 - Big thanks to Laurent Luce for the A* Search Tutorial and Code
-![Laurent Luce's Blog](https://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/ "This Site")
+[Laurent Luce's Blog](https://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/)
 - Thanks to the starter code for the simulated environment and framework
 - Thanks to all the stackoverflow posts I searched to handle weird pieces of
 syntax
