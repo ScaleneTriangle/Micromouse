@@ -119,6 +119,7 @@ of the maze to choose the path more likely to reach the goal.
 
 ## Model Evaluation and Validation
 ![Robot Scores](/Maze_Images/Scores.PNG?raw=true "Robot Scores")
+
 The robustness is shown by successful completion of the three test mazes and the
 self generated maze. The one issue I've seen with using the A* search algorithm
 for the exploration run is that it will not explore more if it has a *single*
